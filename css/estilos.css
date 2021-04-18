@@ -18,7 +18,7 @@ a{
     padding: 0px;
 }
     .header{
-        background: url(../images/fondo2.jpg);
+        background: url(../images/fondo.jpg);
         background-position: center;
         background-attachment: contain;
         background-size: cover;
@@ -98,6 +98,11 @@ a{
                 .article p{
                     font-family: 'Lora', serif;
                     color: #343434;
+                }
+                .article p a{
+                    /* font-family: 'Lora', serif; */
+                    color: #343434;
+                    font-size: 20px;
                 }
             .experiencia{
                 background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
