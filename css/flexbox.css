@@ -1,0 +1,183 @@
+*{
+    margin: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family: 'Lora', serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none ;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0px;
+}
+    .header{
+        background: url(../images/fondo2.jpg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+        .menu{
+            background: rgb(0, 0, 0, .1);
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            border-bottom: 1px solid rgb(255, 255, 255, .5);
+        }
+            .logo{
+                flex: 1 1 auto;
+            }
+                .logo a{
+                    font-size: 30px;
+                    font-weight: bold;
+                    color: white;
+                }
+                .logo a:hover{
+                    color: #343434;
+                }
+            .nav{
+                flex: 3 1 auto;
+            }
+                .nav a{
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: white;
+
+                    padding: 0 10px;
+                    letter-spacing: 2px;
+                }
+                    .nav a:hover{
+                        color: #343434;
+                    }
+            .social{
+                flex: 1 1 auto;
+                display: flex;
+            }
+                .social a{
+                    font-size: 30px;
+                    color: white;
+                    padding: 0 5px;
+                }
+                    .social a:hover{
+                        color: #343434;
+                    }
+        .texto-principal{
+            color: white;
+            text-transform: uppercase;
+        }
+            .texto-principal h1{
+                font-weight: bold;
+            }
+            .texto-principal h4{
+                font-weight: bold;
+            }
+    .section{
+        background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        display: flex;
+    }
+        .articulos{
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+            .article{
+                flex: 1 1 40%;
+            }
+                .article img{
+                    border-radius: 20px;
+                }
+                .article p{
+                    font-family: 'Lora', serif;
+                    color: #343434;
+                }
+            .experiencia{
+                background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+                background-blend-mode: multiply,multiply;
+                border-radius: 20px;
+
+                flex: 1 1 100%;
+                display: flex;
+                flex-flow: row wrap;
+            }
+                .informacion{
+                    flex: 1 1 40%;
+                }
+                    .informacion h2,ul{
+                        color: white;
+                        font-weight: bold;
+                    }
+        .aside{
+            flex: 1 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+            .publicidad{
+                flex: 1 1 auto;
+            }
+        .irArriba{
+            font-size: 50px;
+        }
+            .irArriba a{
+                padding: 0 10px;
+                color: #989898;
+            }
+            .irArriba a:hover{
+                color: #343434;
+            }
+    .footer{
+        background: black;
+        display: flex;
+        justify-content: center;
+    }
+        .pie{
+            /* background: #c23616; */
+            width: 300px;
+        }
+            .pie p{
+                color: white;
+                font-size: 20px;
+                font-weight: bold;
+
+                text-align: center;
+                padding: 0;
+            }
+            .pie a{
+                font-size: 30px;
+                color: white;
+            }
+
+@media all and (max-width: 800px){
+
+    .section{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 600px){
+    .articulos{
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 400px){
+    .aside{
+        flex-direction: row;
+    }
+}
