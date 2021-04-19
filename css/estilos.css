@@ -90,8 +90,12 @@ a{
             flex-flow: row wrap;
         }
             .article{
-                flex: 1 1 40%;
+                flex: 1 1 60%;
+                display: flex;
             }
+                /* .adopt{
+                    flex: 1 1 80%;
+                } */
                 .article img{
                     border-radius: 20px;
                 }
@@ -184,5 +188,8 @@ a{
 @media all and (max-width: 400px){
     .aside{
         flex-direction: row;
+    }
+    .article{
+        flex-direction: column;
     }
 }
