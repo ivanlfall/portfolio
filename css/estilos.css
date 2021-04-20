@@ -185,6 +185,13 @@ a{
     }
 }
 
+
+@media all and (max-width: 650px){
+    .article{
+        flex-direction: column;
+    }
+}
+
 @media all and (max-width: 400px){
     .aside{
         flex-direction: row;
