@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Falleau - Portfolio</title>
 </head>
 <body>
@@ -35,14 +37,16 @@
             </div>
             <div class="texto-principal">
                 <h1 class="text-center py-1 my-1">Falleau, Iván Luis</h1>
-                <h4 class="text-center py-1 my-1">Web Developer</h4>
+                <h4 class="text-center py-1 my-1">Backend Developer</h4>
                 <h4 class="text-center py-1 my-1">Técnico en Administración Financiera</h4>
             </div>
         </header>
         <section class="section" id="skills">
             <div class="articulos">
                 <article class="article ">
-                    <img src="images/AdoptGo.gif" alt="logo AdoptGo" width="40%" >
+                    <a href="http://ivanlfall.pythonanywhere.com/">
+                        <img src="images/AdoptGo.gif" alt="logo AdoptGo" width="40%" >
+                    </a>
                     <div>
                         <h1><a href="http://ivanlfall.pythonanywhere.com/">AdoptGo</a></h1>
                         <p class="mb-0 pb-0">Sitio Web para adopciones responsables de mascotas.</p>
@@ -50,7 +54,9 @@
                     </div>
                 </article>
                 <article class="article">
-                    <img src="images/calculadora.gif" alt="logo calculadora" width="40%" >
+                    <a href="https://ivanlfall.github.io/calculadoraJs/">
+                        <img src="images/calculadora.gif" alt="logo calculadora" width="40%" >
+                    </a>
                     <div>
                         <h1><a href="https://ivanlfall.github.io/calculadoraJs/">Calculadora</a></h1>
                         <p class="mb-0 pb-0">Calculadora con operaciones básicas.</p>
@@ -58,7 +64,9 @@
                     </div>
                 </article>
                 <article class="article">
-                    <img src="images/tfb.jpg" alt="logo barberia" width="40%" >
+                    <a href="https://ivanlfall.github.io/Web-Barberia/#inicio">
+                        <img src="images/tfb.jpg" alt="logo barberia" width="40%" >
+                    </a>
                     <div>
                         <h1><a href="https://ivanlfall.github.io/Web-Barberia/#inicio">TFB - Barbería</a></h1>
                         <p class="mb-0 pb-0">Pagina Web para barbería local.</p>
@@ -66,7 +74,9 @@
                     </div>
                 </article>
                 <article class="article">
-                    <img src="images/agendaElectronica.gif" alt="logo Agenda" width="40%" >
+                    <a href="https://github.com/ivanlfall/AgendaElectronica">
+                        <img src="images/agendaElectronica.gif" alt="logo Agenda" width="40%" >
+                    </a>
                     <div>
                         <h1><a href="https://github.com/ivanlfall/AgendaElectronica">Agenda Electrónica</a></h1>
                         <p class="mb-0 pb-0">App que permite guardar contactos con manejo de Arrays</p>
@@ -89,17 +99,17 @@
                             <li>Universidad Popular (2015-2017)</li>
                                 <p>Tecnicatura en Administración Financiera</p>
                             <li>Informatorio (2020-2021)</li>
-                                <p>Desarrollo Web</p>
+                                <p>Desarrollo Web: Usando Django y Bootstrap</p>
                         </ul>
                     </article>
                 </div>
             </div>
             <aside class="aside">
                 <div class="publicidad">
-                    <img src="images/lg-icons/Csharp_Logo.png" width="100px" alt="logo C#">
+                    <img src="images/lg-icons/java.png" width="100px" alt="logo Java">
                 </div>
                 <div class="publicidad">
-                    <img src="images/lg-icons/NET_Core.svg.png" width="100px" alt="logo .Net">
+                    <img src="images/lg-icons/spring.svg.png" width="150px" alt="logo Spring">
                 </div>
                 <div class="publicidad">
                     <img src="images/lg-icons/python.png" alt="logo py">
@@ -108,13 +118,13 @@
                     <img src="images/lg-icons/django.png" width="128px" alt="logo Django">
                 </div>
                 <div class="publicidad">
+                    <img src="images/lg-icons/Csharp_Logo.png" width="100px" alt="logo C#">
+                </div>
+                <div class="publicidad">
                     <img src="images/lg-icons/javascript.png" width="100px" alt="logo Js">
                 </div>
                 <div class="publicidad">
                     <img src="images/lg-icons/react.png" alt="logo React">
-                </div>
-                <div class="publicidad">
-                    <img src="images/lg-icons/java.png" alt="logo Java">
                 </div>
                 <div class="publicidad">
                     <img src="images/lg-icons/SQL-Server.svg" width="128px" alt="logo SQL Server">
@@ -122,9 +132,9 @@
             </aside>
         </section>
         <div class="irArriba">
-            <div class="d-flex justify-content-end">
-                <a href="#"><i class="fas fa-arrow-circle-up"></i></a>
-            </div>
+            <a href="#"><i class="fas fa-arrow-circle-up"></i></a>
+            <!-- <div class="d-flex justify-content-end">
+            </div> -->
         </div>
         <footer class="footer" id="footer">
             <div class="pie">
@@ -137,5 +147,26 @@
     
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <script>
+        $(document).ready(function () {
+
+            $('.irArriba').click(function () {
+                $('body, html').animate({
+                    scrollTop: '0px'
+                }, 300);
+            });
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 0) {
+                    $('.irArriba').slideDown(300);
+                } else {
+                    $('.irArriba').slideUp(300);
+                }
+            });
+
+        });
+    </script>
+
 </body>
 </html>

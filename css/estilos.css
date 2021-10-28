@@ -5,7 +5,6 @@
 }
 
 body{
-    /* font-family: 'Lora', serif; */
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -36,12 +35,12 @@ a{
                 flex: 1 1 auto;
             }
                 .logo a{
-                    font-size: 30px;
-                    font-weight: bold;
+                    font-size: 50px;
                     color: white;
                 }
                 .logo a:hover{
-                    color: #343434;
+                    font-weight: bold;
+                    text-shadow: 2px 2px 13px white;
                 }
             .nav{
                 flex: 3 1 auto;
@@ -56,7 +55,7 @@ a{
                     letter-spacing: 2px;
                 }
                     .nav a:hover{
-                        color: #343434;
+                        border-bottom: #f5f7fa 2px solid;
                     }
             .social{
                 flex: 1 1 auto;
@@ -68,7 +67,7 @@ a{
                     padding: 0 5px;
                 }
                     .social a:hover{
-                        color: #343434;
+                        text-shadow: 2px 2px 13px white;
                     }
         .texto-principal{
             color: white;
@@ -101,8 +100,10 @@ a{
                     color: #343434;
                 }
                 .article p a{
-                    color: #343434;
                     font-size: 20px;
+                }
+                .article h1 a:hover{
+                    font-weight: bolder;
                 }
             .experiencia{
                 background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
@@ -124,16 +125,19 @@ a{
             flex: 1 2 auto;
             display: flex;
             flex-flow: row wrap;
-            justify-content: space-between;
+            justify-content: center;
         }
             .publicidad{
                 flex: 1 1 auto;
             }
         .irArriba{
             font-size: 50px;
+            display:none;
+            position: fixed;
+            bottom:20px;
+            right:20px;
         }
             .irArriba a{
-                padding: 0 10px;
                 color: #989898;
             }
             .irArriba a:hover{
@@ -145,7 +149,6 @@ a{
         justify-content: center;
     }
         .pie{
-            /* background: #c23616; */
             width: 300px;
         }
             .pie p{
